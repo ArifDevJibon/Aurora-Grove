@@ -1,0 +1,94 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+  // navbar section
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .nav-item {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0 .5rem;
+  }
+
+  .nav-item:hover {
+    transition: border 0.3s;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+  // showcase section
+#showcase {
+  background: url("../images/main.jpeg") no-repeat bottom center / cover;
+  min-height: 750px;
+  position: relative;
+
+  .overlay {
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  #header {
+    z-index: 1;
+  }
+
+  h1 {
+    font-family: 'PT Sans Caption', sans-serif;
+    line-height: 1;
+  }
+
+  .book-btn {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: .5rem 3rem;
+  }
+}
+
+  // Quotes Section
+#quotes {
+  i {
+    opacity: .3;
+  }
+}
+
+  // footer Section
+#footer {
+  font-weight: 300;
+}
+
+
+@media(max-width: 768px){
+  .navbar {
+    background-color: #333;
+    .nav-item:hover {
+      border: 0;
+    }
+  }
+
+  #showcase {
+    min-height: 500px;
+    h1 {
+      font-size: 4rem;
+    }
+    .book-btn {
+      font-size: 1.3rem;
+      padding: .25rem 2rem;
+    }
+  }
+
+ #features {
+   img {
+     width: 50%;
+   }
+ }
+}
